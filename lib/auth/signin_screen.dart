@@ -1,4 +1,5 @@
 import 'package:ecommerce/auth/forget_password_screen.dart';
+import 'package:ecommerce/auth/tell_us_screen.dart';
 import 'package:flutter/material.dart';
 
 class SigninScreen extends StatelessWidget {
@@ -38,16 +39,21 @@ class SigninScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20,),
-              Container(
-                height: 60,
-                width: double.maxFinite,
-                decoration: BoxDecoration(
-                  color: Color(0xff8E6CEF),
-                  borderRadius: BorderRadius.circular(20),
+              InkWell(
+                 onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=> TellUsScreen()));
+                },
+                child: Container(
+                  height: 60,
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: Color(0xff8E6CEF),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Center(child: Text("Continue", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xffFFFFFF)),)),
+                        
+                          
                 ),
-                child: Center(child: Text("Continue", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xffFFFFFF)),)),
-                      
-          
               ),
               SizedBox(height: 15,),
               InkWell(
