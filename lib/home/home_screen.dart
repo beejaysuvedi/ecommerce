@@ -1,3 +1,4 @@
+import 'package:ecommerce/home/categories_screen.dart';
 import 'package:ecommerce/home/product_data_list.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -59,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 15),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,9 +69,14 @@ class HomeScreen extends StatelessWidget {
                     "Categories",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
                   ),
-                  Text(
-                    "See All",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  InkWell(
+                   onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=>CategoriesScreen()));
+                   },
+                    child: Text(
+                      "See All",
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
                   ),
                 ],
               ),
@@ -175,7 +181,66 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              SizedBox(height: 100),
+               SizedBox(height: 30),
+              SizedBox(
+                height: 380,
+                child: ListView.builder(
+                  itemCount: newinlist.length,
+                  scrollDirection: Axis.horizontal,
+
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Container(
+                        height: 281,
+                        width: 159,
+                        decoration: BoxDecoration(
+                          color: Colors.grey.withValues(alpha: 0.15),
+                        ),
+                        child: Column(
+                          children: [
+                            Expanded(
+                              flex: 5,
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(20),
+                                    ),
+                                    child: Image.asset(
+                                      newinlist[index]["image"],
+                                      width: double.infinity,
+                                      height: double.infinity,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 10,
+                                    right: 10,
+                                    child: Icon(Icons.favorite_outline),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(newinlist[index]["name"]),
+                                  
+
+                                  Text ("\$${newinlist[index]['price']}", style: GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w600),),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),
