@@ -21,3 +21,18 @@ List productdatalist = [
   },
 
 ];
+List topsellinglist = [
+  {
+    "name": "Men's Harrington Jacket", "image":"assets/products/jacketdummy.png",'price':'148',
+
+  },
+  {
+    "name": "Max Cirro Men's Slides", "image":"assets/products/chappal.png",'price':'55',
+
+  },
+  {
+    "name": "Men's Coaches Jacket", "image":"assets/products/jacket.png",'price':'66'
+
+  },
+
+];
