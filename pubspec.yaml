@@ -62,6 +62,8 @@ flutter:
   assets:
   - assets/
   - assets/products/
+  - assets/products/hoodie/
+
   #   - images/a_dot_burr.jpe
   #   - images/a_dot_ham.jpeg
 
