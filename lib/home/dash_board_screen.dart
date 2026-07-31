@@ -1,6 +1,7 @@
 import 'package:ecommerce/home/Order/orders_screen.dart';
 import 'package:ecommerce/home/home_screen.dart';
 import 'package:ecommerce/home/notification/notification_screen.dart';
+import 'package:ecommerce/home/setting/personal_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class DashBoardScreen extends StatefulWidget {
@@ -17,7 +18,7 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
     HomeScreen(),
     NotificationScreen(),
     OrdersScreen(),
-    Text("muji"),
+    PersonalDetailsScreen(),
     
   ];
   @override

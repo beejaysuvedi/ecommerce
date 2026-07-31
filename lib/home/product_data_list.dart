@@ -81,3 +81,17 @@ List hoodielist = [
   },
 ];
 
+List jacketlist =[
+  {
+    "image":"assets/products/hoodie/fulljacket.png",
+
+  },
+  {
+    "image":"assets/products/hoodie/halfjacket.png",
+  },
+  {
+    "image":"assets/products/hoodie/pocketjacket.png",
+  }
+
+
+];
