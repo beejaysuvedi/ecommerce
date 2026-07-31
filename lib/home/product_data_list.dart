@@ -64,19 +64,19 @@ List hoodielist = [
 
   },
   {
-    "name": " Fleece Skate Hoodie ", "image":"assets/products/hoodie/yellowhoodie",'price':'66'
+    "name": " Fleece Skate Hoodie ", "image":"assets/products/hoodie/yellowhoodie.png",'price':'66'
 
   },
     {
-    "name": " Men's Ice-Dye Pullover Hoodie", "image":"assets/products/hoodie/colorfulhoodie",'price':'66'
+    "name": " Men's Ice-Dye Pullover Hoodie", "image":"assets/products/hoodie/colorfulhoodie.png",'price':'66'
 
   },
     {
-    "name": " Men's Monogram Hoodie", "image":"assets/products/hoodie/blackwhitehoodie",'price':'66'
+    "name": " Men's Monogram Hoodie", "image":"assets/products/hoodie/blackwhitehoodie.png",'price':'66'
 
   },
   {
-    "name": " Men's Pullover Basketball Hoodie", "image":"assets/products/hoodie/whitehoodie",'price':'66'
+    "name": " Men's Pullover Basketball Hoodie", "image":"assets/products/hoodie/whitehoodie.png",'price':'66'
 
   },
 ];

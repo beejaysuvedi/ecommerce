@@ -1,3 +1,4 @@
+import 'package:ecommerce/home/dash_board_screen.dart';
 import 'package:ecommerce/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -126,7 +127,7 @@ class TellUsScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => HomeScreen()),
+                      MaterialPageRoute(builder: (_) => DashBoardScreen()),
                     );
                   },
                   child: Container(

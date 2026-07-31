@@ -3,7 +3,7 @@ import 'package:ecommerce/auth/create_account_screen.dart';
 import 'package:ecommerce/auth/forget_password_screen.dart';
 import 'package:ecommerce/auth/signin_screen.dart';
 import 'package:ecommerce/auth/tell_us_screen.dart';
-import 'package:ecommerce/home/notification/notications.dart';
+import 'package:ecommerce/home/notification/notification_screen.dart';
 import 'package:ecommerce/splash_screen.dart';
 import 'package:flutter/material.dart';
 
