@@ -55,26 +55,26 @@ class PersonalDetailsScreen extends StatelessWidget {
           
               ),
               SizedBox(height: 30,),
-              Container(
-                height: 60,
-                width: double.maxFinite,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.withValues(alpha: 0.15),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Address", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
-                      InkWell(
-                        onTap: () => (){
-                          Navigator.push(context, MaterialPageRoute(builder: (_)=>AddressScreen()));
-                        },
-                        
-                        child: Icon(Icons.keyboard_arrow_right)),
-                    ],
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>AddressScreen()));
+                },
+                child: Container(
+                  height: 60,
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.grey.withValues(alpha: 0.15),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Address", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                        Icon(Icons.keyboard_arrow_right),
+                      ],
+                    ),
                   ),
                 ),
               ),
