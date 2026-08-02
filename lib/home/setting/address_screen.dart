@@ -42,7 +42,7 @@ class AddressScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("41003, khaula 13, Kushma, Gandaki province .....", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                      Text("41003,Kushma, Gandaki province .....", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
                       Text("Edit", style: GoogleFonts.gabarito(fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xff8E6CEF)),)
                     ],
                   ),
@@ -61,7 +61,7 @@ class AddressScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("33700, Bindabasini 2, Pokhara, Gandaki province .....", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                      Text("33700,  Pokhara, Gandaki province .....", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
                       Text("Edit", style: GoogleFonts.gabarito(fontSize: 14, fontWeight: FontWeight.w500, color: Color(0xff8E6CEF)),)
                     ],
                   ),
