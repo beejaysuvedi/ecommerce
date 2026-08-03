@@ -5,6 +5,7 @@ import 'package:ecommerce/auth/signin_screen.dart';
 import 'package:ecommerce/auth/tell_us_screen.dart';
 import 'package:ecommerce/home/notification/notification_screen.dart';
 import 'package:ecommerce/home/setting/address_screen.dart';
+import 'package:ecommerce/product,page,cart,checkout/product_rating_screen.dart';
 import 'package:ecommerce/splash_screen.dart';
 import 'package:flutter/material.dart';
 
