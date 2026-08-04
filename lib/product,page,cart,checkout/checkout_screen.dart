@@ -20,7 +20,13 @@ class CheckoutScreen extends StatelessWidget {
                 SizedBox(height: 20,),
             Row(
               children: [
-                Icon(Icons.arrow_back),
+                InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                    
+                  },
+                  
+                  child: Icon(Icons.arrow_back)),
                 Spacer(),
                 Text("Checkout",style: GoogleFonts.gabarito(fontSize: 16, fontWeight:FontWeight.w700),),
                 Spacer(),
