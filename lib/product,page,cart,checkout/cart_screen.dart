@@ -20,7 +20,11 @@ class CartScreen extends StatelessWidget {
             SizedBox(height: 25),
             Row(
               children: [
-                Icon(Icons.arrow_back),
+                InkWell
+                (onTap:() {
+                  Navigator.pop(context);
+                },
+                  child: Icon(Icons.arrow_back)),
                 Spacer(),
                 Text(
                   "Cart",

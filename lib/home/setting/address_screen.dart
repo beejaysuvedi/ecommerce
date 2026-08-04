@@ -17,16 +17,17 @@ class AddressScreen extends StatelessWidget {
                 CircleAvatar(
                   radius: 20,
                   backgroundColor: Colors.grey.withValues(alpha:0.15),
-                  child:Expanded
-                  (
-                    flex: 3,
+                  child:InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    
                     child: Icon(Icons.keyboard_arrow_left_outlined)), 
                 ),
-                SizedBox(width: 150,),
+                Spacer(),
                 
-                Expanded(
-                  flex: 1,
-                  child: Text("Address", style: GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w600,),)),
+                Text("Address", style: GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w600,),),
+                Spacer(),
               ],
             ),
             SizedBox(height: 30,),

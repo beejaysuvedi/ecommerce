@@ -1,4 +1,6 @@
 import 'package:ecommerce/home/setting/address_screen.dart';
+import 'package:ecommerce/home/setting/payment_screen.dart';
+import 'package:ecommerce/home/setting/wishlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -92,30 +94,40 @@ class PersonalDetailsScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Wishlist", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
-                      Icon(Icons.keyboard_arrow_right),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (_)=>WishlistScreen()));
+                        },
+                        
+                        child: Icon(Icons.keyboard_arrow_right)),
                     ],
                   ),
                 ),
               ),
               SizedBox(height: 10,),
-                Container(
-                height: 60,
-                width: double.maxFinite,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.grey.withValues(alpha: 0.15),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Payment", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
-                      Icon(Icons.keyboard_arrow_right),
-                    ],
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=>PaymentScreen()));
+                  },
+                  child: Container(
+                  height: 60,
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.grey.withValues(alpha: 0.15),
                   ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Payment", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),),
+                        Icon(Icons.keyboard_arrow_right),
+                      ],
+                    ),
+                  ),
+                                ),
                 ),
-              ),
               SizedBox(height: 10,),
                 Container(
                 height: 60,
