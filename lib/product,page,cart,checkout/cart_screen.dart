@@ -1,3 +1,4 @@
+import 'package:ecommerce/product,page,cart,checkout/checkout_screen.dart';
 import 'package:ecommerce/product,page,cart,checkout/order_placed_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -303,7 +304,7 @@ class CartScreen extends StatelessWidget {
             child: Center(
               child: InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (_)=>OrderPlacedScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (_)=>CheckoutScreen()));
                 },
                 child: Container(
                   width: 342,
