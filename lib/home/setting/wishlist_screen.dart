@@ -1,3 +1,4 @@
+import 'package:ecommerce/home/setting/favourite_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -41,7 +42,12 @@ class WishlistScreen extends StatelessWidget {
                   child: Row(
                     
                     children: [
-                      Icon(Icons.favorite_border),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (_)=>FavouriteScreen()));
+                        },
+                        
+                        child: Icon(Icons.favorite_border)),
                       SizedBox(width: 10,),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
