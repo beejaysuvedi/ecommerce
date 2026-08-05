@@ -95,3 +95,21 @@ List jacketlist =[
 
 
 ];
+List favouritelist =[
+   {
+    "name": "Nike Fuel Pack", "image":"assets/bag.png",'price':'\$32.00',
+
+  },
+   {
+    "name": "Nike Show X Rush", "image":"assets/chasma.png",'price':'\$204',
+
+  },
+   {
+    "name": "Men's T-Shirt", "image":"assets/yellowtshirt.png",'price':'\$45.00',
+
+  },
+   {
+    "name": "Men's Skate T-Shirt", "image":"assets/bluetshirt.png",'price':'\$32',
+
+  },
+];
