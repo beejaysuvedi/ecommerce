@@ -82,33 +82,195 @@ class ProductRatingScreen extends StatelessWidget {
                 Text("Men's Harrington Jacket", style: GoogleFonts.gabarito(fontSize: 16,fontWeight: FontWeight.w600, color: Color(0xff272727)),),
                 Text("\$148", style: GoogleFonts.gabarito(fontSize: 16, fontWeight: FontWeight.w600, color: Color(0xff8E6CEF)),),
                 SizedBox(height: 30,),
-                Container(
-                  height: 56,
-                  width: double.maxFinite,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.withValues(alpha: 0.15),
-          
-          
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("size"),
-                     Row(
-                      children: [
-                           Text("s"),
-                           SizedBox(width:8,),
-                        Icon(Icons.keyboard_arrow_down),
-                      ],
-                     )
-                    
-                    
-                      ],
+                InkWell(
+                  onTap: () {
+                    showModalBottomSheet(context: context, builder: (context){
+                      return SizedBox(
+                        height: 400,
+                        child:          Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                          child: SingleChildScrollView(
+                            child: Column(
+                            children: [
+                              SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    SizedBox(),
+                                    Text("Color", style: GoogleFonts.gabarito(fontSize: 24, fontWeight: FontWeight.w700),),
+                                    InkWell(
+                                      onTap: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: Icon(Icons.cancel)),
+                                  ],
+
+                                                        
+                                ),
+                                
+                              ),
+                              SizedBox(height: 15,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                            
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: .0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Orange"),
+                                      Row(
+                                        
+                                        children: [
+                                          Icon(Icons.circle, color: Colors.orange,),
+                                           SizedBox(width: 10,),
+                                          Icon(Icons.check),
+                                         
+                                          
+                                        ],
+                                      ),
+                                                            
+                                    ],
+                                  ),
+                                ),
+                                
+                            
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                            
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: .0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Black"),
+                                      Icon(Icons.circle, color: Colors.black,),
+                                       
+                                                            
+                                    ],
+                                  ),
+                                ),
+                            
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                            
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: .0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Red"),
+                                      Icon(Icons.circle, color: Colors.red,),
+                                       
+                                                            
+                                    ],
+                                  ),
+                                ),
+                            
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                            
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: .0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Yellow"),
+                                      Icon(Icons.circle, color: Colors.yellow,),
+                                       
+                                                            
+                                    ],
+                                  ),
+                                ),
+                            
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                            
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: .0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Blue"),
+                                      Icon(Icons.circle, color: Colors.blue,),
+                                       
+                                                            
+                                    ],
+                                  ),
+                                ),
+                            
+                              ),
+                            ],
+                                                  ),
+                          ),
+                        ) ,
+                      );
+            
+                    },);
+                  },
+                  child: Container(
+                    height: 56,
+                    width: double.maxFinite,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withValues(alpha: 0.15),
+                            
+                            
                     ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("size"),
+                       Row(
+                        children: [
+                             Text("s"),
+                             SizedBox(width:8,),
+                          Icon(Icons.keyboard_arrow_down),
+                        ],
+                       )
+                      
+                      
+                        ],
+                      ),
+                    ),
+                    
                   ),
-                  
                 ), 
                 SizedBox(height: 10,),
                 Container(
