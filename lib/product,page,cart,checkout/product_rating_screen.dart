@@ -256,10 +256,10 @@ class ProductRatingScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("size"),
+                          Text("Color"),
                        Row(
                         children: [
-                             Text("s"),
+                            Icon(Icons.circle, color: Colors.black,),
                              SizedBox(width:8,),
                           Icon(Icons.keyboard_arrow_down),
                         ],
@@ -286,10 +286,10 @@ class ProductRatingScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("size"),
+                        Text("Size"),
                      Row(
                       children: [
-                           Icon(Icons.circle),
+                           Text("S"),
                            SizedBox(width: 8,),
                         Icon(Icons.keyboard_arrow_down),
                       ],
