@@ -273,32 +273,164 @@ class ProductRatingScreen extends StatelessWidget {
                   ),
                 ), 
                 SizedBox(height: 10,),
-                Container(
-                  height: 56,
-                  width: double.maxFinite,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.withValues(alpha: 0.15),
-                    
-          
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Size"),
-                     Row(
-                      children: [
-                           Text("S"),
-                           SizedBox(width: 8,),
-                        Icon(Icons.keyboard_arrow_down),
-                      ],
-                     ),
-                      ],
+                InkWell(
+                  onTap: () {
+                  showModalBottomSheet(context: context, builder: (context){
+                    return SizedBox(
+                      height: 800,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    SizedBox(),
+                                    Text("Size", style: GoogleFonts.gabarito(fontSize: 24, fontWeight: FontWeight.w700),),
+                                    Icon(Icons.cancel),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("S"),
+                                      Icon(Icons.check,),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("M"),
+                                      Icon(Icons.check,),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("L"),
+                                      Icon(Icons.check,),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("XL"),
+                                      Icon(Icons.check,),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Container(
+                                height: 56,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                  color: Colors.grey.withValues(alpha: 0.15),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("2XL"),
+                                      Icon(Icons.check,),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          
+                          ),
+                        ),
+                      ),
+
+
+
+                    );
+                  });
+                  },
+
+
+                  child: Container(
+                    height: 56,
+                    width: double.maxFinite,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withValues(alpha: 0.15),
+                      
+                            
                     ),
-                     ),
-                  
-                  
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Size"),
+                       Row(
+                        children: [
+                             Text("S"),
+                             SizedBox(width: 8,),
+                          Icon(Icons.keyboard_arrow_down),
+                        ],
+                       ),
+                        ],
+                      ),
+                       ),
+                    
+                    
+                  ),
                 ),
                  SizedBox(height: 10,),
                 Container(
