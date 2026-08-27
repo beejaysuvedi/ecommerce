@@ -112,4 +112,6 @@ List favouritelist =[
     "name": "Men's Skate T-Shirt", "image":"assets/bluetshirt.png",'price':'\$32',
 
   },
+
+  
 ];
