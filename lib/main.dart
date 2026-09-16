@@ -9,6 +9,7 @@ import 'package:ecommerce/home/setting/address_screen.dart';
 import 'package:ecommerce/product,page,cart,checkout/product_rating_screen.dart';
 import 'package:ecommerce/provider/counter_provider.dart';
 import 'package:ecommerce/provider/counter_screen.dart';
+import 'package:ecommerce/provider/theme_provider.dart';
 import 'package:ecommerce/provider/todo_provider.dart';
 import 'package:ecommerce/provider/todo_screen.dart';
 import 'package:ecommerce/splash_screen.dart';
@@ -28,17 +29,34 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_)=>CounterProvider()),
-        ChangeNotifierProvider(create: (_)=>TodoProvider())
+        ChangeNotifierProvider(create: (_)=>TodoProvider()),
+        ChangeNotifierProvider(create: (_)=>ThemeProvider())
 
       ],
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-         
-          colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-        ),
-        home: const TodoScreen(),
-        debugShowCheckedModeBanner: false,
+      
+      child: Consumer<ThemeProvider>(
+        builder: (context, themeProvider, child) {
+          return MaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            brightness: Brightness.light,
+            primarySwatch: Colors.blue,
+           
+            colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+          ),
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            primarySwatch: Colors.indigo,
+          ),
+themeMode: themeProvider.themeMode,
+
+
+          home: const TodoScreen(),
+          debugShowCheckedModeBanner: false,
+        );
+
+          
+        },
       ),
     );
   }
